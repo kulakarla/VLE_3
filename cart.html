@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="ee">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content=""> 
+        <meta name="author" content="">
+        <title>Ostukorv</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+        <!-- minu CSS -->
+        <link rel="stylesheet" href="custom.css">
+    </head>
+    <body>
+        <!-- päis -->
+        <header class="py-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 my-3 text-center"><img src="logo2.png" width="50%"></div>              
+                </div>          
+            </div>
+        </header>
+        <!-- navigatsioon -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Uued tooted</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vannitooted</a> 
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
+                            <a class="dropdown-item" href="#">Vannisoolad</a> 
+                            <a class="dropdown-item" href="#">Vannipiimad</a> 
+                            <a class="dropdown-item" href="#">Vannipommid</a>
+                            <a class="dropdown-item" href="list.html">Seebid ja du&scaron;igeelid</a>
+                        </div> 
+                    </li> 
+                    <li class="nav-item dropdown"> 
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kehahooldus</a> 
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
+                            <a class="dropdown-item" href="#">Kehakreemid</a> 
+                            <a class="dropdown-item" href="#">Keha&otilde;lid</a> 
+                            <a class="dropdown-item" href="#">Kehakoorijad</a> 
+                            <a class="dropdown-item" href="#">Deodorandid</a> 
+                            <a class="dropdown-item" href="#">K&auml;te ja jalgade hooldus</a>  
+                        </div> 
+                    </li> 
+                    <li class="nav-item dropdown"> 
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">N&auml;ohooldus</a> 
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
+                            <a class="dropdown-item" href="#">Puhastus ja toniseerimine</a> 
+                            <a class="dropdown-item" href="#">Niisutus ja toitmine</a> 
+                            <a class="dropdown-item" href="#">Koorijad ja maskid</a> 
+                        </div> 
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="meist.html">Meist</a></li> 
+                </ul>
+                <!-- search -->
+                <form class="form-inline m-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Otsi" aria-label="Search">
+                    <button class="btn btn-outline-white my-2 my-sm-0" type="submit"><svg class="lnr lnr-magnifier"><use xlink:href="#lnr-magnifier"></use></svg></button>
+                </form>
+            </div>
+            <!-- cart -->
+            <a href="cart.html"><button class="btn btn-dark my-2 my-sm-0" type="submit"><svg class="lnr lnr-cart"><use xlink:href="#lnr-cart"></use></svg></button></a>
+        </nav> 
+        <section>
+            <!-- breadcrumb -->
+            <nav aria-label="breadcrumb" >
+                <ol class="breadcrumb bg-white my-2">
+                    <li class="breadcrumb-item"><a href="index.html">Avaleht</a></li>
+                    <li class="breadcrumb-item active">Ostukorv</li>
+                </ol>
+            </nav>
+        </section>
+        <!-- ostukorv -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex align-items-start flex-column">
+                        <div class="mb-auto p-2"><h4>Ostukorvis on 1 toode</h4></div>    
+                        <div class="mb-auto p-2 row">
+                            <div class="col-lg-6">
+                                <img src="soap.png" width="100%">
+                            </div>
+                            <div class="col-lg-6">
+                                <p>15.99&#8364;</p>
+                                <p>Toode 1</p>
+                                    <select class="form-control col-lg-5 form-sm" id="kogus">
+                                        <option>0</option>
+                                        <option selected="selected">1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                <br/>
+                            </div>            
+                        </div>
+                        <div class="p-2">
+                            <p>Tarne: <span class="text-primary">tasuta</span></p>
+                            <p>Kokku: <span class="text-primary">15.99&#8364;</span></p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Makse</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Tarne</a>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                                <div class="accordion py-3" id="accordionWithRadioExample">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="custom-control custom-radio">
+                                                <input checked="" data-toggle="collapse" data-target="#collapseOne" type="radio" id="customRadio1" name="customRadio" class="custom-control-input" />
+                                                <label class="custom-control-label" for="customRadio1">Krediit või deebetkaart</label>
+                                            </div>
+                                        </div>
+                                
+                                        <div id="collapseOne" class="collapse show" data-parent="#accordionWithRadioExample">
+                                            <div class="card-body">
+                                                <form>
+                                                    <div class="form-group">
+                                                      <label for="nimi">Nimi</label>
+                                                      <input type="email" class="form-control" id="nimi" placeholder="">
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label for="kaardinr">Kaardi number</label>
+                                                      <input type="text" class="form-control" id="kaardinr" placeholder="">
+                                                    </div>
+                                                   <div class="container d-flex justify-content-between px-0">
+                                                        
+                                                    <div class="form-group">
+                                                        <label for="kuupaev">Kuupäev</label>
+                                                        <input type="text" class="form-control" id="kuupaev" placeholder="DD/MM">
+                                                      </div>
+                                                      <div class="form-group">
+                                                        <label for="cvvcvc">CVV/CVC</label>
+                                                        <input type="text" class="form-control" id="cvvcvc" placeholder="">
+                                                    </div>
+                        
+                                                   </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="custom-control custom-radio">
+                                                <input data-toggle="collapse" data-target="#collapseTwo" type="radio" id="customRadio2" name="customRadio" class="custom-control-input" />
+                                                <label class="custom-control-label" for="customRadio2">PayPal</label>
+                                            </div>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" data-parent="#accordionWithRadioExample">
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="custom-control custom-radio">
+                                                <input data-toggle="collapse" data-target="#collapseTwo" type="radio" id="customRadio3" name="customRadio" class="custom-control-input" />
+                                                <label class="custom-control-label" for="customRadio3">Stripe</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="custom-control custom-radio">
+                                                <input data-toggle="collapse" data-target="#collapseTwo" type="radio" id="customRadio4" name="customRadio" class="custom-control-input" />
+                                                <label class="custom-control-label" for="customRadio4">Pangalink</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="container px-0 py-3" id="valikud">
+                                    <p>
+                                        <a class="btn btn-dark"  data-toggle="collapse" href="#pakiautomaat" role="button" aria-expanded="false" aria-controls="pakiautomaat">
+                                            Pakiautomaat
+                                        </a>
+                                        <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#kuller" aria-expanded="false" aria-controls="kuller">
+                                            Kuller
+                                        </button>
+                                        <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#tulenise" aria-expanded="false" aria-controls="tulenise">
+                                            Tulen ise järele
+                                        </button>
+                                    </p>
+                                    <div class="collapse" data-parent="#valikud" id="pakiautomaat">
+                                        
+                                            <select class="custom-select" aria-label="Default select example">
+                                                <option selected disabled="true">Vali pakiautomaat</option>
+                                                <option value="1">Tallinna Pirita Selver Itella Smartpost Automaat</option>
+                                                <option value="2">Tartu Ujula Coop DPD Pakiautomaat</option>
+                                                <option value="3">Tartu Kvartali Fake Pakiautomaat</option>
+                                            </select>
+                                        
+                                    </div>
+                                    <div class="collapse" data-parent="#valikud" id="kuller">
+                                        <div class="card card-body border-0">
+                                            <form>
+                                                <div class="row py-1">
+                                                    <div class="col px-0 mx-0">
+                                                        <input type="text" class="form-control" placeholder="Eesnimi">
+                                                    </div>
+                                                    <div class="col px-0 mx-0">
+                                                        <input type="text" class="form-control" placeholder="Perekonnanimi">
+                                                    </div>
+                                                </div>
+                                                <div class="row py-1">
+                                                    <input type="text" class="form-control" placeholder="Tänav">
+                                                </div>
+                                                <div class="row py-1">
+                                                    <div class="col px-0 mx-0">
+                                                        <input type="text" class="form-control" placeholder="Postiindeks">
+                                                    </div>
+                                                    <div class="col px-0 mx-0">
+                                                        <input type="text" class="form-control" placeholder="Linn/alev/alevik/küla">
+                                                    </div>
+                                                </div>
+                                                <div class="row py-1">
+                                                    <input type="text" class="form-control" placeholder="Sünnikuupäev (PP.KK.AAAA)">
+                                                </div>
+
+
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="collapse" data-parent="#valikud" id="tulenise">
+                                        <div class="card card-body border-0 px-0">
+                                            Kaubale saab järgi tulla aadressile Täiesti Fake 24a.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                          </div>
+
+                    </div>
+
+
+                </div>   
+            </div>
+            <div class="container d-flex justify-content-end">
+                            
+                <a href="kinnitus.html" class="btn btn-dark btn-lg mb-3">Maksa</a>
+            </div>
+        </section>
+        <!-- jalus -->
+        <div class="container">
+            <footer class="w-100 d-flex flex-wrap justify-content-between px-0 py-3 my-4 border-top">
+              <div class="col-md-4 d-flex align-items-center">
+                <ul class="list-unstyled">
+                    <li>© 2023 OÜ LTAT.03.015</li>
+                    <li>Tel 55551234</li>
+                    <li>firma@firma.ee</li>
+                </ul>
+
+              </div>
+          
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><path fill-rule="evenodd" d="M2.378 4.648v3.304H0v4.04h2.378V24h4.884V11.993h3.277s.305-1.937.454-4.056H7.28V5.175c0-.413.533-.97 1.06-.97H11V0H7.382C2.257 0 2.378 4.044 2.378 4.648z"/></svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="27" height="22"><path fill="#000" fill-rule="evenodd" d="M23.818 3.48c1.144-.688 2.023-1.777 2.436-3.074-1.07.637-2.256 1.1-3.517 1.348C21.727.674 20.287 0 18.693 0c-3.06 0-5.54 2.487-5.54 5.554 0 .435.05.86.144 1.266C8.693 6.588 4.612 4.377 1.88 1.017c-.477.82-.75 1.774-.75 2.792 0 1.923.978 3.623 2.464 4.62-.908-.03-1.762-.28-2.51-.696v.07c0 2.69 1.91 4.935 4.444 5.446-.465.127-.954.195-1.46.195-.356 0-.703-.035-1.042-.1.705 2.207 2.75 3.813 5.175 3.858-1.892 1.49-4.28 2.377-6.88 2.377-.443 0-.884-.025-1.32-.076C2.45 21.08 5.366 22 8.49 22c10.19 0 15.762-8.463 15.762-15.802 0-.24-.006-.48-.016-.72 1.082-.782 2.02-1.76 2.764-2.874-.993.442-2.06.74-3.182.875z"/></svg></a></li>  
+              </ul>
+            </footer>
+        </div>        
+        <!-- jQuery, Popper.js, Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    </body>
+</html>         
